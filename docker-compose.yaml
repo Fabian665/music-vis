@@ -10,4 +10,4 @@ services:
             - ./data:/data
         ports:
             - 8501:8501
-        image: streamlit-music-vis
+        image: rfabian665/streamlit-music-vis

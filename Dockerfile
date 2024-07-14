@@ -7,9 +7,9 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --no-cache-dir \
-    streamlit=1.36.0 \
+    streamlit==1.36.0 \
     spotipy==2.24.0 \
-    plotly=5.22.0
+    plotly==5.22.0
 
 EXPOSE 8501
 
