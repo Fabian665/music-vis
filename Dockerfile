@@ -3,13 +3,13 @@ FROM python:3.11.9-slim-bookworm
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
-    # build-essential \
     curl \
-    # software-properties-common \
-    # git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install --no-cache-dir streamlit spotipy plotly
+RUN pip3 install --no-cache-dir \
+    streamlit=1.36.0 \
+    spotipy==2.24.0 \
+    plotly=5.22.0
 
 EXPOSE 8501
 
