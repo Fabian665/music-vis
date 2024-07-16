@@ -2,6 +2,7 @@ name: streamlit
 services:
     streamlit-music-vis:
         container_name: streamlit
+        # command: streamlit run Galgalaz_Vis.py --logger.level=debug
         environment:
             - SPOTIPY_CLIENT_ID=${SPOTIPY_ID}
             - SPOTIPY_CLIENT_SECRET=${SPOTIPY_SECRET}
