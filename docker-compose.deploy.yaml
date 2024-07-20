@@ -1,0 +1,10 @@
+name: streamlit
+services:
+    streamlit-music-vis:
+        container_name: streamlit
+        # command: streamlit run Galgalaz_Vis.py --logger.level=debug
+        volumes:
+            - ./src:/app
+        ports:
+            - 8501:8501
+        image: rfabian665/streamlit-music-vis:deploy

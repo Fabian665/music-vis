@@ -2,3 +2,4 @@ src/__pycache__/**
 src/.cache
 data/
 .vs/
+src/.streamlit/secrets.toml
